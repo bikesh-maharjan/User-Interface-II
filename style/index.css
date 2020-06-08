@@ -1,1 +1,276 @@
-/* Add CSS styling here */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin:0;
+        max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        background-color:grey;
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    p{
+        line-height: 1.5;
+    }
+    h1{
+        margin: 4% 0;
+    }
+    section{
+        padding: 4% 0;
+    }
+
+    h1{
+        font-size: 7rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        color:whitesmoke;
+        background-color: black;
+
+    }
+    .navbar{
+        display: flex;
+        flex-direction:row;
+
+    }
+    nav a{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin:1%;
+        width: 13%;
+        text-align: center;
+        padding: 1.5% 0;
+        border-radius: 10px;
+        border: 2px solid #000;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 3px;
+        transition: 2s;
+    }
+    nav a:hover{
+        background-color: black;
+        color:white;
+    }
+
+
+
+    .main-container{
+        display: flex;        
+
+    }
+    .left, .right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .right{
+        align-items: center;
+    }
+    .text{
+        width: 90%;
+    }
+    .text button{
+        background-color: burlywood;
+        padding: 5% 2%;
+        border-radius: 8px;
+        border: 2px solid #000;
+        text-decoration: none;
+        color:blueviolet;
+        letter-spacing: 3px;
+        transition:2s;
+        margin-bottom: 3%;
+    }
+    .text button:hover{
+        background-color: #000;
+        color:darkcyan;
+    }
+
+    h2{
+        font-size: 4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: normal;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
+    }
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    width: 22%;
+    margin: 3% 0;
+    text-align: center;
+}
+
+/* footer styling */ 
+footer{
+    background-color:beige;
+    padding: 1%;
+    text-align: center; 
+  }
+  footer div{ 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+  }
+  footer h3{
+    font-size: 2rem;
+    color:brown;
+  }
+  footer h3:hover{
+    font-size: 3rem;
+    color:brown;
+    text-transform: uppercase;
+  }
+  footer a {
+    font-size: 1.8rem; 
+  }
+  footer a:hover {
+    font-size: 1.8rem; 
+  }
+
+  @media (max-width: 800px){
+      h1{
+          font-size: 5rem;
+          text-align: center;
+          width: 100%;
+         
+      }
+
+      h2{
+          font-size: 2.5rem;
+      }
+      .navbar{
+          display:flex;
+          justify-content: center; 
+      }
+      nav a{
+          font-size: 1.5rem;
+          padding: 2% 3% ;
+      }
+    .image-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+          
+      }
+      .box{
+          width: 45.5%;
+          margin: 1% 0;
+
+      }
+
+  }
+
+  @media (max-width: 500px){
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: .5% .5%;
+        padding: 2% 0;
+        font-size: 1.5rem;;
+
+    }
+    nav a{
+        font-size: 1.2rem;
+    }
+    .main-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+       
+
+    }
+    .right{
+        width: 100%;
+      padding: 1% 1%;
+      margin: 2% 0%;
+      text-align: center;
+     
+  }
+
+  .image-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .box{
+      width: 90%;
+  }
+  h3{
+      font-size: 1.6rem;
+      color: white;
+  }
+
+}
+
+
+
+
+  
+
+
+
+
+
+
+
