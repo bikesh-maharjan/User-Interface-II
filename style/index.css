@@ -85,8 +85,7 @@
 
 
     .main-container{
-        display: flex;
-        
+        display: flex;        
 
     }
     .left, .right{
@@ -102,7 +101,7 @@
     }
     .text button{
         background-color: burlywood;
-        padding: 3% 2%;
+        padding: 5% 2%;
         border-radius: 8px;
         border: 2px solid #000;
         text-decoration: none;
@@ -145,11 +144,10 @@
 /* footer styling */ 
 footer{
     background-color:beige;
-    padding: 2%;
+    padding: 1%;
     text-align: center; 
   }
-  footer div{
-    padding:2%; 
+  footer div{ 
     display: flex; 
     justify-content: center;
     flex-direction: column; 
@@ -167,9 +165,7 @@ footer{
     font-size: 1.8rem; 
   }
   footer a:hover {
-    font-size: 2rem; 
-    
-
+    font-size: 1.8rem; 
   }
 
   @media (max-width: 800px){
@@ -181,11 +177,15 @@ footer{
       }
 
       h2{
-          font-size: 3rem;
+          font-size: 2.5rem;
       }
       .navbar{
           display:flex;
           justify-content: center; 
+      }
+      nav a{
+          font-size: 1.5rem;
+          padding: 2% 3% ;
       }
     .image-container{
         display:flex;
@@ -212,9 +212,12 @@ footer{
         flex-direction: column;
         align-items: center;
         margin: .5% .5%;
-        padding: 1% 0;
+        padding: 2% 0;
         font-size: 1.5rem;;
 
+    }
+    nav a{
+        font-size: 1.2rem;
     }
     .main-container{
         display: flex;
@@ -257,13 +260,6 @@ footer{
       font-size: 1.6rem;
       color: white;
   }
-
-  footer{
-      
-  }
-
-
-  
 
 }
 
